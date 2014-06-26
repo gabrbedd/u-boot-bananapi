@@ -21,6 +21,8 @@ obj-$(CONFIG_AUXTEK_T003)	+= dram_auxtek_t003.o
 # This is not a typo, uses the same mem settings as the a10s-olinuxino-m
 obj-$(CONFIG_AUXTEK_T004)	+= dram_a10s_olinuxino_m.o
 obj-$(CONFIG_BA10_TV_BOX)	+= dram_sun4i_384_1024_iow8.o
+obj-$(CONFIG_BANANAPI)		+= bananapi_misc_init.o
+obj-$(CONFIG_BANANAPI)		+= dram_bananapi.o
 obj-$(CONFIG_COBY_MID7042)	+= dram_sun4i_408_1024_iow16.o
 obj-$(CONFIG_COBY_MID8042)	+= dram_sun4i_360_1024_iow16.o
 obj-$(CONFIG_COBY_MID9742)	+= dram_sun4i_408_1024_iow16.o
