@@ -398,7 +398,6 @@
 #define CONFIG_DESIGNWARE_ETH		/* GMAC can use designware driver */
 #define CONFIG_DW_AUTONEG
 #define CONFIG_PHY_GIGE			/* GMAC can use gigabit PHY	*/
-#define CONFIG_PHY_ADDR		1
 #define CONFIG_MII			/* MII PHY management		*/
 #define CONFIG_PHYLIB
 #endif
