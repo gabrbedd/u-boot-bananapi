@@ -15,6 +15,7 @@
 #define CONFIG_CLK_FULL_SPEED	912000000
 
 #define CONFIG_SYS_PROMPT	"BananaPi> "
+#define CONFIG_MACH_TYPE	4284
 
 /*
  * Include common sunxi configuration where most the settings are
