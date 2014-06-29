@@ -26,4 +26,13 @@
 
 #define CONFIG_ARCH_MISC_INIT
 
+#undef CONFIG_BOOTCOMMAND
+#define CONFIG_BOOTCOMMAND \
+	"if run loadbootscr; then " \
+	"echo Jumping to ${bootscr};" \
+	"source ${scriptaddr};" \
+	"fi;" \
+	"run autoboot;" \
+	""
+
 #endif /* __CONFIG_H */
