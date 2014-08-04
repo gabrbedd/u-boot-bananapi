@@ -6127,4 +6127,4 @@ Notes:
   reasonable and not too big, they will be acknowledged. But patches
   bigger than the size limit should be avoided.
 
-* u-boot modified for Banana Pi is powered by lemaker.org .
+* u-boot modified for Banana Pi is powered by <http://lemaker.org> .
