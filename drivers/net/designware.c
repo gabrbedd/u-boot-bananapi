@@ -18,6 +18,7 @@
 #include "designware.h"
 #ifdef CONFIG_BANANAPI
     #include <asm/gpio.h>
+    #include <asm/arch/cpu.h>
 #endif
 
 #if !defined(CONFIG_PHYLIB)
@@ -506,10 +507,10 @@ void gmac_set_macaddr(struct eth_device *dev)
     if (priv->gpio_power_hd){
         //we will set the mac address here
         unsigned int reg_val;
-        reg_val = readl(0xf1c23800);//read the chipID
+        reg_val = readl(SUNXI_SID_BASE);//read the chipID
         dev->enetaddr[0] = 0x02; /* Non OUI / registered MAC address */
         dev->enetaddr[1] = (reg_val >>  0) & 0xff;
-        reg_val = readl(0xf1c2380c);
+        reg_val = readl(SUNXI_SID_BASE + 0x0c);
         dev->enetaddr[2] = (reg_val >> 24) & 0xff;
         dev->enetaddr[3] = (reg_val >> 16) & 0xff;
         dev->enetaddr[4] = (reg_val >>  8) & 0xff;
